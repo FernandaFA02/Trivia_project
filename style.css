@@ -1,11 +1,150 @@
- 
  body {
-    background-image: url(https://images.pexels.com/photos/3591074/pexels-photo-3591074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-color: #6C8BA7;
-    font-family: 'Bonheur Royale', cursive;
-    font-size: larger;
- }
+   display: block;
+   background-image: url(./assets/Acantilado\ del\ amanecer.JPG);
+   -webkit-animation: marquee 100s infinite linear;
+  }
 
- p {
-   font-size: xx-large ;
- }
+  @-webkit-keyframes marquee {
+    0% {
+      background-position: 20;
+    }
+  
+    100% {
+      background-position: -10000px;
+    }
+  }
+
+  #title {
+    text-align: center;
+    font-family: 'Bonheur Royale';
+    font-size: 80px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px;
+  }
+
+  #user_name {
+    text-align: center;
+    border-radius: 70px;
+    font-family: 'Bonheur Royale';
+    font-size: 60px;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  h3 {
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Bonheur Royale';
+    font-size: 40px;
+    color: black;
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .image {
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    border-radius: 60px;
+  }
+
+  .introduccion {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color: rgb(14, 10, 10);
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 15px;
+}
+
+.table {
+  margin-top: 30px;
+  caption-side: bottom;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin: 150px;
+  background: #40E0D0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: 'Source Code Pro', monospace;
+}
+
+tr, td {
+  border: 3px solid #A6C198;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.usuario {
+  font-size: medium;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.correct {
+  font-size: medium;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Bonheur Royale';
+  font-size: medium;
+  color: black;
+}
+
+@media all and (max-width: 400px) {
+  #title{
+    text-align: left;
+    color: black;
+  }
+  #user_name {
+    text-align: left;
+    color: black;
+  }
+  h3 {
+    text-align: left;
+    color: black;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  .table {
+    margin: auto;
+  }  
+}
+@media all and (min-width: 900px){
+  #title{
+    text-align: center;
+    color: black;
+  }
+  #user_name {
+    text-align: center;
+    color: black;
+  }
+  h3 {
+    text-align: center;
+    color: black;
+  } 
+  .image {
+    width: auto;
+    height: auto;
+  }
+  .table {
+    margin: auto;
+  }  
+}
